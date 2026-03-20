@@ -26,7 +26,11 @@ SECRET_KEY = 'django-insecure-ujpene%ys)+h%wvv%jw+6)ydp&pq0y414oaynhgkf$u@7tid0c
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    'daviportifolio.pythonanywhere.com',
+    'localhost',
+    '127.0.0.1'
+]
 
 
 # Application definition
@@ -117,6 +121,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/6.0/howto/static-files/
 
 STATIC_URL = 'static/'
+STATIC_ROOT = "/home/davidados/portifolio_deploy/static"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
